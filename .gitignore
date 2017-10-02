@@ -2,3 +2,5 @@ dataset/user_*
 dataset/test_images/*
 dataset/output/*
 *.pyc
+*.pkl
+*.pkl.gz
