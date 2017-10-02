@@ -6,6 +6,10 @@ from os import listdir
 
 
 def main():
+    """
+    Tests the classifier using images from the test_images folder and saves the
+    images with drawn bounding boxes on output
+    """
     new_gr = gr.load_model(name="sign_detector.pkl.gz")  # automatic dict unpacking
     # new_gr = gr('/home/vsant/DevProjects/Sign-Language-and-Static-gesture-recognition-using-sklearn/dataset/',
     #             handDetector, signDetector)
@@ -22,7 +26,7 @@ def main():
 
         draw = ImageDraw.Draw(test_img)
         draw.rectangle(((pos[0], pos[1]), (pos[2], pos[3])), fill=None)
-        test_img.save(img, "JPEG")
+        test_img.save("output/" + img, "JPEG")
 
         print pos, pred
 

@@ -1,3 +1,4 @@
 dataset/user_*
-dataset/test_images
+dataset/test_images/*
+dataset/output/*
 *.pyc
