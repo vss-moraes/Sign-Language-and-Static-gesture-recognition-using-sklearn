@@ -1,0 +1,3 @@
+dataset/user_*
+dataset/test_images
+*.pyc
